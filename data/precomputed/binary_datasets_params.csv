@@ -1,0 +1,5 @@
+name,type,n,m,secret,path
+baseline_n10_binary,baseline,10,500,"[1, 0, 0, 0, 0, 1, 0, 1, 0, 0]",C:\Users\user\OneDrive\Desktop\salsa-repro-salsa-connected\data\precomputed\baseline_n10_binary
+idea_n10_binary,idea,10,500,"[1, 0, 0, 0, 0, 1, 0, 1, 0, 0]",C:\Users\user\OneDrive\Desktop\salsa-repro-salsa-connected\data\precomputed\idea_n10_binary
+baseline_n30_binary,baseline,30,2000,"[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1]",C:\Users\user\OneDrive\Desktop\salsa-repro-salsa-connected\data\precomputed\baseline_n30_binary
+idea_n30_binary,idea,30,2000,"[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1]",C:\Users\user\OneDrive\Desktop\salsa-repro-salsa-connected\data\precomputed\idea_n30_binary
