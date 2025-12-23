@@ -1,3 +1,4 @@
+# 데이터 생성
 import numpy as np
 from scipy.signal import fftconvolve
 import os, json, csv
@@ -20,7 +21,7 @@ def circular_wrap(conv_result, n, q):
     b = conv_result[n:2*n] if conv_result.shape[0] >= 2*n else np.zeros(n, dtype=np.int64)
     return (a + b) % q
 
-def obfuscate_maclaurin(s, q, degrees=[1,3,5], coeffs=None, coeff_choices=[-1,1]):
+def obfuscate_maclaurin(s, q, degrees=[1,3,5], coeffs=None, coeff_choices=[-1,1]): # 맥클로린 난독화
     n = len(s)
     rng = np.random.RandomState(0)
     if coeffs is None:
@@ -38,7 +39,7 @@ def obfuscate_maclaurin(s, q, degrees=[1,3,5], coeffs=None, coeff_choices=[-1,1]
         s_prime = (s_prime + coeffs[d] * term) % 842779
     return s_prime % 842779, coeffs
 
-def gen_lwe_samples(n, q, m, sigma, s, seed=None):
+def gen_lwe_samples(n, q, m, sigma, s, seed=None): #le 샘플 생성
     rng = np.random.RandomState(seed)
     A = rng.randint(low=0, high=q, size=(m,n), dtype=np.int64)
     e = np.round(rng.normal(loc=0.0, scale=sigma, size=(m,))).astype(np.int64) % q

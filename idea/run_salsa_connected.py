@@ -38,7 +38,7 @@ def build_cmd(data_path, exp_name, seed):
             '--val_batch_size', str(flags.get('val_batch_size',64)),
             '--n_enc_heads', str(flags.get('n_enc_heads',4)),
             '--n_enc_layers', str(flags.get('n_enc_layers',2)),
-            '--enc_emb_dim', str(flags.get('enc_emb_dim',128)),
+            '--enc_emb_dim', str(flags.get('enc_emb_dim',128)), # 128차원 -> 512차원까지 올릴생각 1024도 가능성 있음
             '--max_epoch', str(flags.get('epochs',5))]
     return cmd
 
